@@ -40,4 +40,13 @@ public class SchoolController {
         return ResponseEntity.ok(schoolService.getAllSchoolsAsView());
     }
 
+    @GetMapping(
+            path = "/load-test",
+            produces = "application/json"
+    )
+    public ResponseEntity<?> getAllSchoolsForLoadTesting() {
+        // non cache
+        return ResponseEntity.ok(schoolService.getAllSchoolsForLoadTesting());
+    }
+
 }

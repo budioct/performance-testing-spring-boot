@@ -10,4 +10,5 @@ public interface SchoolService {
     List<School> getAllSchoolsAsEntity();
     List<SchoolDTO.SchoolResponse> getAllSchoolsAsDTO();
     List<SchoolView> getAllSchoolsAsView();
+    List<SchoolDTO.SchoolResponse> getAllSchoolsForLoadTesting();
 }
